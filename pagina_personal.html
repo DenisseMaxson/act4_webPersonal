@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi página personal</title>
+    <meta charset="UTF-8">
+    <style>
+        /* === ESTILOS GENERALES === */
+        body {
+            background-color: rgb(3, 2, 70);
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+
+        /* === ENCABEZADO === */
+       h1 {
+            background-color: rgb(247, 41, 137);
+            background-image: url(fondo.jpg);
+            background-repeat: no-repeat;        
+            background-size: cover;             
+            background-position: center top -50px; 
+            text-align: center;
+            padding: 60px 20px;                 
+            margin: 0;
+            color: #ffffff;
+        }
+        h2 {
+            margin-top: 20px;
+        }
+
+        /* === CONTENIDO === */
+        p, ul, ol, dl, table, form {
+            margin: 20px;
+            background-color: rgb(163, 86, 252);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+
+        ul, ol, dl {
+            padding-left: 40px;
+        }
+
+        /* === TABLA === */
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: auto;
+        }
+        table th, table td {
+            border: 1px solid #13163a;
+            padding: 10px;
+            text-align: center;
+        }
+        table th {
+            background-color: rgb(214, 142, 208);
+        }
+
+        /* === FORMULARIO === */
+        form label {
+            font-weight: bold;
+        }
+        input, textarea {
+            margin-top: 5px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #263a13;
+        }
+        input[type="submit"] {
+            background-color: rgb(19, 35, 58);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: rgb(29, 51, 16);
+        }
+
+        /* === ENLACES === */
+        a {
+            text-decoration: none;
+            color: #133a35;
+            font-weight: bold;
+        }
+        a:hover {
+            color: blanchedalmond;
+        }
+
+        /* === GALERÍA === */
+        .galeria {
+            text-align: center;
+            margin: 20px;
+        }
+        .galeria img {
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.3);
+        }
+
+        /* === PIE DE PÁGINA === */
+        footer {
+            background-color: rgb(88, 0, 160);
+            padding: 20px;
+            text-align: center;
+            color: blanchedalmond;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado con el nombre -->
+    <h1 id="inicio">------ Mi página personal ------</h1>
+    <h2>Nombre del creador: Deni</h2>
+    <hr>
+
+    <!-- Autobiografía -->
+    <h2>Autobiografía</h2>
+    <p>Hola, me llamo <b>Deni</b>, soy estudiante de desarrollo de software.  
+    Me gustan mucho los <strong>conejos</strong>, coleccionar muñecas y <i>dibujar</i>.  
+    También disfruto escuchar música, hacer ejercicio y jugar videojuegos.</p>
+    <p>Mis <u>preferencias</u> principales están relacionadas con el arte y la tecnología.</p>
+    <p>En mi tiempo libre, paso momentos con mi familia, o tambien jugando o viendo series con mi novio, estudio y busco aprender cosas nuevas.</p>
+
+    <hr>
+    <!-- Lista de hobbies -->
+    <h2>Mis hobbies</h2>
+    <ul>
+        <li>Dibujar</li>
+        <li>Escuchar música</li>
+        <li>Videojuegos</li>
+        <li>Cuidar a mis conejos</li>
+    </ul>
+
+    <!-- Lista ordenada -->
+    <h2>Mis metas</h2>
+    <ol>
+        <li>Terminar mi carrera</li>
+        <li>Mejorar en programación</li>
+        <li>Viajar con mi familia</li>
+    </ol>
+
+    <!-- Lista de definición -->
+    <h2>Definiciones</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Lenguaje de marcado para páginas web</dd>
+        <dt>CSS</dt>
+        <dd>Lenguaje de estilos</dd>
+    </dl>
+
+    <hr>
+    <!-- Imágenes -->
+    <h2>Galería</h2>
+    <p>Algunas imágenes de ejemplo:</p>
+    <div class="galeria">
+        <img src="takemura.jpg" alt="Mi foto personal" width="200">
+        <img src="normanreedus.jpg" alt="Mi foto personal" width="200">
+        <img src="Lucian.jpg" alt="Mi foto personal" width="200">
+    </div>
+
+    <!-- Video embebido -->
+    <h2>Video embebido</h2>
+    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@_kptjoot/video/7451320847895137569" data-video-id="7451320847895137569" style="max-width: 605px;min-width: 325px;" > 
+        <section>  
+            <a title="johnnycyberpunk2077" target="_blank" href="https://www.tiktok.com/tag/johnnycyberpunk2077?refer=embed">#johnnycyberpunk2077</a> 
+            <a title="johnnysilverhandcyberpunk2077" target="_blank" href="https://www.tiktok.com/tag/johnnysilverhandcyberpunk2077?refer=embed">#johnnysilverhandcyberpunk2077</a> 
+        </section> 
+    </blockquote> 
+    <script async src="https://www.tiktok.com/embed.js"></script>
+
+    <hr>
+    <!-- Tabla -->
+    <h2>Tabla de preferencias</h2>
+    <table>
+        <tr>
+            <th>Actividad</th>
+            <th>Frecuencia</th>
+        </tr>
+        <tr>
+            <td>Dibujar</td>
+            <td>Diario</td>
+        </tr>
+        <tr>
+            <td>Jugar videojuegos</td>
+            <td>3 veces por semana</td>
+        </tr>
+        <tr>
+            <td>Cuidar conejos</td>
+            <td>Siempre</td>
+        </tr>
+    </table>
+
+    <hr>
+    <!-- Formulario simple -->
+    <h2>Contáctame</h2>
+    <form>
+        <label>Nombre:</label>
+        <input type="text" name="nombre">
+        <br><br>
+        <label>Correo:</label>
+        <input type="email" name="correo">
+        <br><br>
+        <label>Mensaje:</label>
+        <textarea name="mensaje"></textarea>
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <hr>
+    <!-- Enlaces y anclas -->
+    <h2>Enlaces</h2>
+    <p>Visita: 
+        <a href="https://www.google.com" target="_blank">Google</a> 
+    </p>
+    <p><a href="#inicio">Volver al inicio</a></p>
+
+    <hr>
+    <!-- Texto con modificadores -->
+    <h2>Texto con modificadores</h2>
+    <p>
+        <b>Negrita</b>, 
+        <i>Lucian, si lees esto teamo</i>, 
+        <u>Subrayado</u>, 
+        <small>Texto pequeño</small>, 
+        H<sub>2</sub>O y E=mc<sup>2</sup>
+    </p>
+
+    <footer>
+        <p>Página creada como práctica de HTML — Lenguaje de Marcado de Hipertexto</p>
+    </footer>
+</body>
+</html>
