@@ -116,6 +116,12 @@
             display: block;
             margin: 0 auto;
         }
+
+        .video {
+            display: flex;
+            justify-content: center; /* centra horizontal */
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
@@ -172,7 +178,13 @@
 
     <!-- Video embebido -->
     <h2>Video embebido</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/mqpgTLH9UP0?si=WNbRolmMgStk0Foc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mqpgTLH9UP0?si=WNbRolmMgStk0Foc" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </div>
 
     <hr>
     <!-- Tabla -->
